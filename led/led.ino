@@ -1,11 +1,17 @@
-int led=13;
+int ledOrange=13;
+int ledBlue=12;
+
 void setup() {
-  pinMode(led, OUTPUT);
+  pinMode(ledOrange, OUTPUT);
+  pinMode(ledBlue, OUTPUT);
 }
 
 void loop() {
-  digitalWrite(led, HIGH);   
-  delay(500);                       
-  digitalWrite(led, LOW);    
+  digitalWrite(ledOrange, HIGH);   
+  digitalWrite(ledBlue, LOW); 
+  delay(500);  
+                       
+  digitalWrite(ledOrange, LOW);
+  digitalWrite(ledBlue, HIGH);    
   delay(500);                       
 }
